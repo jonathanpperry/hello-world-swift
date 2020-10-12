@@ -16,9 +16,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ハローワールド" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipb-f5-Yce">
-                                <rect key="frame" x="146.5" y="437.5" width="121.5" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNO-zf-vHg" userLabel="FirstButton">
+                                <rect key="frame" x="132" y="433" width="150" height="30"/>
+                                <state key="normal" title="Sign in with Facebook"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TxF-gb-3yg" userLabel="SecondButton">
+                                <rect key="frame" x="141" y="473" width="132" height="30"/>
+                                <state key="normal" title="Sign in with Google"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3U-Ox-wuy" userLabel="ThirdButton">
+                                <rect key="frame" x="147" y="513" width="120" height="30"/>
+                                <state key="normal" title="Sign in with Email"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login or create an account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7QT-b4-cMP">
+                                <rect key="frame" x="105.5" y="392" width="203" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social Squid" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4a-Nj-IAr">
+                                <rect key="frame" x="143.5" y="241.5" width="127" height="120.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="44"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -26,14 +44,22 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ipb-f5-Yce" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Clw-hE-PZT"/>
-                            <constraint firstItem="ipb-f5-Yce" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hlM-Hc-aZj"/>
+                            <constraint firstItem="TxF-gb-3yg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1JR-cN-B8M"/>
+                            <constraint firstItem="TxF-gb-3yg" firstAttribute="top" secondItem="eNO-zf-vHg" secondAttribute="bottom" constant="10" id="Ej6-MD-zLI"/>
+                            <constraint firstItem="e4a-Nj-IAr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JVZ-Dh-nz0"/>
+                            <constraint firstItem="P3U-Ox-wuy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PN6-wm-E8L"/>
+                            <constraint firstItem="7QT-b4-cMP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i4A-Ee-5Ts"/>
+                            <constraint firstItem="P3U-Ox-wuy" firstAttribute="top" secondItem="TxF-gb-3yg" secondAttribute="bottom" constant="10" id="iLB-Md-zwt"/>
+                            <constraint firstItem="7QT-b4-cMP" firstAttribute="top" secondItem="e4a-Nj-IAr" secondAttribute="bottom" constant="30" id="jTA-if-bgv"/>
+                            <constraint firstItem="eNO-zf-vHg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="loU-5I-sbn"/>
+                            <constraint firstItem="eNO-zf-vHg" firstAttribute="top" secondItem="7QT-b4-cMP" secondAttribute="bottom" constant="20" id="q35-yK-RHj"/>
+                            <constraint firstItem="eNO-zf-vHg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zOq-rA-E96"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="530" y="80"/>
+            <point key="canvasLocation" x="528.98550724637687" y="79.6875"/>
         </scene>
     </scenes>
     <resources>
